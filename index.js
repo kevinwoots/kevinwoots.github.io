@@ -14,30 +14,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-function rollDie() {
-	console.log("Rolled the die")
-
-	// Get the element with the id "fireplace"
-	let el = document.getElementById("roll_die");
-
-    let rand = 1 + Math.floor(Math.random() * 6);
-    let rand_color = 30 * rand;
-    // Add 20 fire emoji to it
-    el.innerHTML = `<button type="button" onclick="rollDie()">Your roll: ${rand}, click to roll again!</button>`
-
-	// Also set its color to red
-	el.style.backgroundColor = `rgba(20, ${rand_color}, ${rand_color}, 1)`;
-}
-
 var link_dict = {
-    "A2": "A2: Animated GIFs",
-    "A3": "A3: Drawing Tool",
-    "A4": "A4: Swarm",
-    "A5": "A5: Chatbot",
-    "A6": "A6: An Emoji Argument",
-    "A7": "A7: An Array of Floats",
-    "A8": "A8: Big Data Visualization",
-    "A9": "A9: Virtual Costume"
+    "Home": "HOME",
+    "Current Research": "Current Research",
+    "Publications": "Publications",
+    "Birds": "Birds"
 }
 
 function findKeyFromValue(dict, val){
